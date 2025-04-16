@@ -2,6 +2,7 @@ import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 import Feature from "./components/Feature"
 import TopSeller from "./components/TopSeller"
+import TrendProducts from "./components/TrendProducts"
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
       <Hero />
       <Feature />
       <TopSeller />
-
+      <TrendProducts />
     </div>
   )
 }

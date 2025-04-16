@@ -23,8 +23,8 @@ const TopSeller = () => {
             <div className='container mx-auto px-4 lg:px-8 z-10 relative'>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6'>
                     {TopSellerData.map((item) => (
-                        <div key={item.id} className='group relative bg-black/30 backdrop-blur-sm rounded-xl p-4 
-                        hover:bg-indigo-900/40 transition-all duration-300 transform hover:-translate-y-2
+                        <div key={item.title} className='group relative bg-black/30 backdrop-blur-sm rounded-xl p-4 
+                         transition-all duration-300 transform hover:-translate-y-2
                         border border-[var(--color-border)] hover:border-[var(--color-border-hover)]'>
                             <div className='flex gap-4'>
                                 <div className='w-1/3'>
