@@ -4,6 +4,7 @@ import Feature from "./components/Feature"
 import TopSeller from "./components/TopSeller"
 import TrendProducts from "./components/TrendProducts"
 import MasterArtGaming from "./components/MasterArtGaming"
+import OfferZone from "./components/OfferZone"
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <TopSeller />
       <TrendProducts />
       <MasterArtGaming />
+      <OfferZone />
     </div>
   )
 }
