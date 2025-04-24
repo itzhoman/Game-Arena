@@ -38,25 +38,19 @@ const OfferZone = () => {
         );
     }, []);
 
-    const handleOrderPopup = () => { };
+
 
     return (
-        <div ref={sectionRef} className=' w-full flex flex-col justify-center relative items-center mb10
+        <div ref={sectionRef} className=' w-full flex flex-col justify-center relative items-center mb-10 
          bg-gradient-background text-[var(--color-text-primary)] overflow-hidden'>
-        {/* Three.js Canvas Background */}
-        <div className='absolute top-0 left-0 w-full h-full'>
-            <Canvas camera={{ position: [0, 0, 1] }}>
-                <ParticlesBackground />
-            </Canvas>
-        </div>
-
- 
-            <div>
-                <h2 className="text-4xl font-extrabold text-gray-900">
-                    Explore Our Innovative 3D Shoe Designs
-                </h2>
+            {/* Three.js Canvas Background */}
+            <div className='absolute top-0 left-0 w-full h-full'>
+                <Canvas camera={{ position: [0, 0, 1] }}>
+                    <ParticlesBackground />
+                </Canvas>
             </div>
-            <div className="container mt-36">
+
+            <div className="container mt-44">
                 {/* Swiper Container */}
                 <Swiper
                     modules={[Navigation, Pagination]}
@@ -71,18 +65,19 @@ const OfferZone = () => {
                 >
                     {ProductsData.map((data) => (
                         <SwiperSlide
-                        className="!bg-transparent "
-                        key={data.id}>
+                            className="!bg-transparent "
+                            key={data.id}>
                             <div
                                 className="product-card rounded-2xl bg-secondary hover:bg-primary/10 hover:bg-[#2E2E2E]
-                                hover:text-black relative shadow-xl duration-300 group max-w-[400px] md:ml-12"
+                                hover:text-black relative shadow-xl duration-300 group max-w-[450px] md:ml-12 flex flex-col justify-center
+                                items-center"
                             >
                                 {/* Image section */}
-                                <div className="h-[230px] w-[400px]">
+                                <div className="h-[400px] w-[400px]">
                                     <img
                                         src={data.img}
                                         alt=""
-                                        className="max-w-[270px] h-[350px] block mx-auto 
+                                        className="max-w-[300px] h-[350px] block mx-auto 
                                         group-hover:scale-105 duration-300 drop-shadow-md"
                                     />
                                 </div>
@@ -102,7 +97,6 @@ const OfferZone = () => {
                                         className="bg-[#db2777] hover:scale-105 duration-300 text-white py-1 px-4
                                          rounded-full mt-4 group-hover:bg-secondary hover:bg-secondary 
                                          group-hover:text-black"
-                                        onClick={handleOrderPopup}
                                     >
                                         Order Now
                                     </button>
