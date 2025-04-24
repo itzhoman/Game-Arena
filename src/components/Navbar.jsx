@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import  { useEffect, useRef, useState } from 'react'
 import { navigation } from '../data'
 import { IoIosSearch } from 'react-icons/io';
 import { HiMenu, HiX } from 'react-icons/hi';
@@ -78,7 +78,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <button className="hidden md:block bg-gradient-primary text-[var(--color-text-primary)] px-6 py-2 rounded-full font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-[var(--color-primary)]/25">
+        <button className="hidden md:block bg-gradient-primary text-[var(--color-text-primary)] px-6 py-2 rounded-full font-semibold transition-all duration-300  hover:shadow-[var(--color-primary)]/25">
           Sign Up
         </button>
 
@@ -104,7 +104,7 @@ const Navbar = () => {
               {item.title}
             </a>
           ))}
-          <button className="bg-gradient-primary text-[var(--color-text-primary)] px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-[var(--color-primary)]/25">
+          <button className="bg-gradient-primary text-[var(--color-text-primary)] px-8 py-3 rounded-full font-semibold transition-all duration-300  hover:shadow-[var(--color-primary)]/25">
             Sign Up
           </button>
         </div>

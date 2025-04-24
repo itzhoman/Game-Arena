@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -28,7 +28,8 @@ const Hero = () => {
                 opacity: 1,
                 duration: 0.1,
                 delay: i * 0.05,
-                ease: 'power2.out'
+                ease: 'power2.out',
+                color : '#ec4899',
             })
         })
 
@@ -115,7 +116,7 @@ const Hero = () => {
                 className='w-[500px] ml-[100px] relative z-10'
             >
                 <h1 ref={titleRef} className='text-5xl font-extrabold tracking-wide leading-tight'>
-                    The New <span className='inline-block bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-secondary)] bg-clip-text text-transparent'>Immersive Gaming</span> Experience
+                    The New <span className=' bg-pink-800 inline-block '>Immersive Gaming</span> Experience
                 </h1>
                 <p ref={descriptionRef} className='mt-6 text-xl font-medium text-[var(--color-text-muted)] leading-relaxed opacity-0'>
                     Welcome to our gaming shop, where the latest and greatest gaming hardware 

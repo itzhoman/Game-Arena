@@ -1,4 +1,3 @@
-import React from 'react'
 import { TopSellerData } from '../data'
 import { Canvas } from '@react-three/fiber'
 import ParticlesBackground from './ParticlesBackground'

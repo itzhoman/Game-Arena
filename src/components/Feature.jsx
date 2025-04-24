@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { featured } from '../data';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -16,8 +16,8 @@ const Feature = () => {
   useEffect(() => {
     // Set initial state - everything invisible
     gsap.set(sectionRef.current, {
-      opacity: 0,
-      visibility: 'hidden'
+      opacity: 1,
+      visibility: 'visible'
     });
 
     // Simple animation that triggers once when scrolling to the section
@@ -73,13 +73,12 @@ const Feature = () => {
               border border-[var(--color-border)] hover:border-[var(--color-border-hover)]'
             >
               <div className='relative h-48 lg:h-56 mb-6 lg:mb-8 overflow-hidden rounded-lg'>
-                <div className='absolute -inset-1 bg-gradient-primary rounded-lg blur opacity-30 group-hover:opacity-50 transition-opacity'></div>
+                <div className='absolute -inset-1 rounded-lg blur opacity-30 group-hover:opacity-50 transition-opacity'></div>
                 <img 
                   src={item.image} 
                   alt={item.title} 
                   className='relative w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300' 
                 />
-                <div className='absolute inset-0 bg-gradient-to-t from-black/60 to-transparent'></div>
               </div>
               
               <h3 className='text-2xl lg:text-3xl font-bold mb-4 lg:mb-6 text-white capitalize'>{item.title}</h3>
