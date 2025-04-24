@@ -1,4 +1,4 @@
-import { Pagination, Autoplay } from 'swiper/modules';
+import {  Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -54,7 +54,10 @@ const TrendProductsComponent = () => {
                 });
             }
         });
+
+        
     }, []);
+
 
     return (
         <div ref={sectionRef} className='w-full h-full bg-gradient-background overflow-hidden relative '>
@@ -71,12 +74,12 @@ const TrendProductsComponent = () => {
             {/* Swiper Content */}
             <div className='relative flex items-center justify-center mt-12 z-10'>
                 <Swiper
-                    modules={[Pagination, Autoplay]}
+                    modules={[ Autoplay]}
                     autoplay={{
                         delay: 6000,
                         disableOnInteraction: false,
                     }}
-                    pagination={{ clickable: true }}
+
                     style={{
                         width: '600px'
                     }}
