@@ -68,7 +68,7 @@ const MasterArtGaming = () => {
     }, []);
 
     return (
-        <div className='w-full min-h-screen bg-gradient-background overflow-hidden relative'>
+        <div className='w-full  bg-gradient-background overflow-hidden relative'>
             {/* Three.js Canvas Background */}
             <div className='absolute top-0 left-0 w-full h-full z-0'>
                 <Canvas camera={{ position: [0, 0, 1] }}>
@@ -79,7 +79,7 @@ const MasterArtGaming = () => {
             {/* Content Section */}
             <div
                 ref={sectionRef}
-                className='w-full flex flex-col lg:flex-row items-center justify-between gap-12 p-6 lg:p-16 relative z-10'
+                className='w-full flex flex-col lg:flex-row items-center justify-between gap-12 p-6 lg:p-16 relative z-10 my-10'
             >
                 {/* Image Section */}
                 <img

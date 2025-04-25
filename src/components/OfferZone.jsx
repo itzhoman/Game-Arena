@@ -49,7 +49,7 @@ const OfferZone = () => {
                 </Canvas>
             </div>
 
-            <div className="container mt-44">
+            <div className="container mt-4">
                 {/* Swiper Container */}
                 <Swiper
                     modules={[Navigation, Pagination]}
@@ -67,7 +67,8 @@ const OfferZone = () => {
                             key={data.id}>
                             <div
                                 className="product-card rounded-2xl bg-secondary hover:bg-primary/10 hover:bg-[#2E2E2E]
-                                hover:text-black relative shadow-xl duration-300 group max-w-[450px] md:ml-12 flex flex-col justify-center
+                                hover:text-black relative shadow-xl duration-300 group max-w-[450px] md:ml-12 flex flex-col 
+                                justify-center
                                 items-center"
                             >
                                 {/* Image section */}
