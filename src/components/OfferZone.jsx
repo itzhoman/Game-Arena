@@ -6,7 +6,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { FaStar } from "react-icons/fa";
 import { ProductsData } from "../data";
 import { Canvas } from '@react-three/fiber'
 import ParticlesBackground from './ParticlesBackground'
@@ -76,18 +75,14 @@ const OfferZone = () => {
                                     <img
                                         src={data.img}
                                         alt=""
-                                        className="max-w-[300px] h-[350px] block mx-auto 
+                                        className="max-w-[300px] h-[350px] block mx-auto obtain
                                         group-hover:scale-105 duration-300 drop-shadow-md"
                                     />
                                 </div>
                                 {/* Details section */}
                                 <div className="p-4 text-center -mt-8">
                                     {/* Star rating */}
-                                    <div className="flex items-center justify-center gap-1 mb-2">
-                                        {[...Array(4)].map((_, i) => (
-                                            <FaStar key={i} className="text-yellow-500" />
-                                        ))}
-                                    </div>
+                                    
                                     <h1 className="text-xl font-bold">{data.title}</h1>
                                     <p className="text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2">
                                         {data.description}

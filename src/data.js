@@ -128,15 +128,15 @@ export const TrendProducts = [
 export const ProductsData = [
     {
       id: 1,
-      img: pc4,
-      title: "Casual Sneakers",
+      img: pc1,
+      title: "",
       rating: 4.8,
       color: "White",
       aosDelay: "0",
     },
     {
       id: 2,
-      img: pc4,
+      img: pc2,
       title: "Formal Leather Shoes",
       rating: 4.7,
       color: "Black",
@@ -144,7 +144,7 @@ export const ProductsData = [
     },
     {
       id: 3,
-      img: pc4,
+      img: pc3,
       title: "Sports Running Shoes",
       rating: 4.9,
       color: "Gray",
@@ -160,7 +160,7 @@ export const ProductsData = [
     },
     {
       id: 5,
-      img: pc4,
+      img: headset3,
       title: "Sports Running Shoes",
       rating: 4.9,
       color: "Gray",
@@ -168,7 +168,7 @@ export const ProductsData = [
     },
     {
       id: 6,
-      img: pc4,
+      img: headset2,
       title: "Sports Running Shoes",
       rating: 4.9,
       color: "Gray",

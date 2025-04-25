@@ -5,6 +5,7 @@ import TopSeller from "./components/TopSeller"
 import TrendProducts from "./components/TrendProducts"
 import MasterArtGaming from "./components/MasterArtGaming"
 import OfferZone from "./components/OfferZone"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <TrendProducts />
       <MasterArtGaming />
       <OfferZone />
+      <Footer />
     </div>
   )
 }
