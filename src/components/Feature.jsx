@@ -17,9 +17,10 @@ const Feature = () => {
 
     // Initial setup - hide items
     gsap.set(items, {
-      x: 100,
+      y: 2000,
       opacity: 0
     });
+
 
     // Title animation
     ScrollTrigger.create({
@@ -49,18 +50,14 @@ const Feature = () => {
     });
 
     // Items animation
-    ScrollTrigger.batch(items, {
-      start: " center",
-      onEnter: elements => {
-        gsap.to(elements, {
-          x: 0,
-          opacity: 1,
-          duration: 0.3,
-          stagger: 0.1,
-          ease: "power2.out"
-        });
-      }
+    gsap.to(items, {
+      y: 0,
+      opacity: 1,
+      duration: 1,
+      stagger: 0.1,
+      ease: "power2.out"
     });
+
   }, []);
 
   return (

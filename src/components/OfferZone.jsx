@@ -65,7 +65,6 @@ const OfferZone = () => {
                 >
                     {ProductsData.map((data) => (
                         <SwiperSlide
-                            className="!bg-transparent "
                             key={data.id}>
                             <div
                                 className="product-card rounded-2xl bg-secondary hover:bg-primary/10 hover:bg-[#2E2E2E]
