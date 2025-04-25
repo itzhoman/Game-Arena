@@ -129,7 +129,7 @@ export const ProductsData = [
     {
       id: 1,
       img: pc1,
-      title: "",
+      title: "RGB Gaming PC Case",
       rating: 4.8,
       color: "White",
       aosDelay: "0",
@@ -137,7 +137,7 @@ export const ProductsData = [
     {
       id: 2,
       img: pc2,
-      title: "Formal Leather Shoes",
+      title: "Mechanical Gaming Keyboard",
       rating: 4.7,
       color: "Black",
       aosDelay: "200",
@@ -145,7 +145,7 @@ export const ProductsData = [
     {
       id: 3,
       img: pc3,
-      title: "Sports Running Shoes",
+      title: "High-Performance Gaming Mouse",
       rating: 4.9,
       color: "Gray",
       aosDelay: "400",
@@ -153,7 +153,7 @@ export const ProductsData = [
     {
       id: 4,
       img: pc4,
-      title: "Sports Running Shoes",
+      title: "4K Gaming Monitor",
       rating: 4.9,
       color: "Gray",
       aosDelay: "400",
@@ -161,7 +161,7 @@ export const ProductsData = [
     {
       id: 5,
       img: headset3,
-      title: "Sports Running Shoes",
+      title: "Surround Sound Gaming Headset",
       rating: 4.9,
       color: "Gray",
       aosDelay: "400",
@@ -169,9 +169,10 @@ export const ProductsData = [
     {
       id: 6,
       img: headset2,
-      title: "Sports Running Shoes",
+      title: "Wireless Gaming Headset",
       rating: 4.9,
       color: "Gray",
       aosDelay: "400",
     },
   ];
+  
