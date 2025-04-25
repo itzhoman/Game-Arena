@@ -64,7 +64,7 @@ const Navbar = () => {
         {/* Search */}
         <div className='relative' ref={searchRef}>
           <button
-            className='text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors duration-300'
+            className='text-[var(--color-text-secondary)] mt-1 hover:text-[var(--color-text-primary)] transition-colors duration-300'
             onClick={toggleSearch}
           >
             <IoIosSearch className='text-2xl mt-1' />
@@ -78,14 +78,17 @@ const Navbar = () => {
           >
             <input
               type='text'
-              className='w-[200px] h-[35px] rounded-full bg-[var(--color-bg-tertiary)] text-[var(--color-text-primary)] pl-4 pr-4 border border-[var(--color-border)] focus:outline-none focus:border-[var(--color-border-hover)] transition-colors duration-300'
+              className='w-[200px] h-[35px] rounded-full bg-[var(--color-bg-tertiary)] text-[var(--color-text-primary)] 
+              pl-4 pr-4 border border-[var(--color-border)] focus:outline-none focus:border-[var(--color-border-hover)] 
+              transition-colors duration-300'
               placeholder='Search...'
             />
           </div>
         </div>
 
         {/* Desktop Sign Up */}
-        <button className='hidden md:block bg-gradient-primary text-[var(--color-text-primary)] px-6 py-2 rounded-full font-semibold transition-all duration-300 hover:shadow-[var(--color-primary)]/25'>
+        <button className='hidden md:block bg-gradient-primary text-[var(--color-text-primary)] px-6 py-2 rounded-full 
+        font-semibold transition-all duration-300 hover:shadow-[var(--color-primary)]/25'>
           Sign Up
         </button>
 
@@ -100,7 +103,8 @@ const Navbar = () => {
 
       {/* Mobile Menu Drawer */}
       {menuOpen && (
-        <div className='absolute top-[80px] left-0 w-full bg-[var(--color-bg-secondary)] flex flex-col gap-4 p-6 md:hidden border-t border-[var(--color-border)] shadow-lg'>
+        <div className='absolute top-[80px] left-0 w-full bg-[var(--color-bg-secondary)] flex flex-col gap-4 p-6 md:hidden 
+        border-t border-[var(--color-border)] shadow-lg'>
           {navigation.map((item) => (
             <a
               key={item.id}
