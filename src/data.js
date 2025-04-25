@@ -137,7 +137,7 @@ export const ProductsData = [
     {
       id: 2,
       img: pc2,
-      title: "Mechanical Gaming Keyboard",
+      title: "RGB Gaming PC Case",
       rating: 4.7,
       color: "Black",
       aosDelay: "200",
@@ -145,7 +145,7 @@ export const ProductsData = [
     {
       id: 3,
       img: pc3,
-      title: "High-Performance Gaming Mouse",
+      title: "RGB Gaming PC Case",
       rating: 4.9,
       color: "Gray",
       aosDelay: "400",
@@ -153,7 +153,7 @@ export const ProductsData = [
     {
       id: 4,
       img: pc4,
-      title: "4K Gaming Monitor",
+      title: "RGB Gaming PC Case",
       rating: 4.9,
       color: "Gray",
       aosDelay: "400",
