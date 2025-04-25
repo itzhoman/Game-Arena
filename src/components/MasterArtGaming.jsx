@@ -68,7 +68,7 @@ const MasterArtGaming = () => {
     }, []);
 
     return (
-        <div className='w-full h-full bg-gradient-background overflow-hidden relative'>
+        <div className='w-full min-h-screen bg-gradient-background overflow-hidden relative'>
             {/* Three.js Canvas Background */}
             <div className='absolute top-0 left-0 w-full h-full z-0'>
                 <Canvas camera={{ position: [0, 0, 1] }}>
@@ -76,26 +76,25 @@ const MasterArtGaming = () => {
                 </Canvas>
             </div>
 
-            {/* Content Section with Scroll Trigger */}
+            {/* Content Section */}
             <div
                 ref={sectionRef}
-                className='w-full h-[800px] flex items-center justify-between mt-22 gap-12 p-6 relative z-10'
+                className='w-full flex flex-col lg:flex-row items-center justify-between gap-12 p-6 lg:p-16 relative z-10'
             >
                 {/* Image Section */}
                 <img
-                    className='w-1/2 mx-auto'
+                    className='w-[90%] max-w-[500px] lg:w-1/2'
                     src={Master}
                     alt="Gaming Master"
                 />
 
                 {/* Text Section */}
-                <motion.div className='flex flex-col items-center gap-10 text-[#d1d5db]'>
-                    <h1 ref={titleRef} className='text-3xl font-extrabold'>
+                <motion.div className='flex flex-col items-center lg:items-start gap-6 text-[#d1d5db] max-w-[700px]'>
+                    <h1 ref={titleRef} className='text-3xl md:text-4xl lg:text-5xl font-extrabold text-center lg:text-left'>
                         Elevate Your Gaming Supremacy
                     </h1>
-                    <p className='text-xl font-bold w-[600px]'>
-                        Unlock the Secrets of Gaming Mastery.
-                        Discover the ultimate gaming solutions at our premier gaming shop.
+                    <p className='text-base md:text-lg lg:text-xl font-medium text-center lg:text-left'>
+                        Unlock the Secrets of Gaming Mastery. Discover the ultimate gaming solutions at our premier gaming shop.
                         Explore the latest hardware, accessories, and cutting-edge technology to elevate your experience.
                         Immerse yourself in the ultimate gaming adventure with our curated selection of premium equipment—
                         from the newest consoles and controllers to high-performance gear.
@@ -104,8 +103,8 @@ const MasterArtGaming = () => {
                         <motion.button
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className='bg-gradient-primary duration-500 w-[150px] p-3 font-extrabold
-                            tracking-widest rounded-full shadow-lg hover:shadow-xl'
+                            className='bg-gradient-primary duration-500 w-[150px] p-3 font-extrabold tracking-widest 
+                            rounded-full shadow-lg hover:shadow-xl mt-4 text-center' 
                         >
                             Explore More
                         </motion.button>
@@ -113,6 +112,7 @@ const MasterArtGaming = () => {
                 </motion.div>
             </div>
         </div>
+
     );
 };
 
