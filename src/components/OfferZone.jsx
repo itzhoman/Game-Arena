@@ -40,7 +40,7 @@ const OfferZone = () => {
 
 
     return (
-        <div ref={sectionRef} className=' w-full flex flex-col justify-center relative items-center mb-10 
+        <div ref={sectionRef} className=' w-full flex flex-col justify-center relative items-center 
          bg-gradient-background text-[var(--color-text-primary)] overflow-hidden'>
             {/* Three.js Canvas Background */}
             <div className='absolute top-0 left-0 w-full h-full'>
